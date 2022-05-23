@@ -18,6 +18,8 @@ export default {
     HIDE_SIGN_IN_WITH_LEDGER_ENTER_ACCOUNT_ID_MODAL: false,
     LINKDROP_GAS: '100000000000000',
     LOCKUP_ACCOUNT_ID_SUFFIX: 'lockup.m0',
+    MIGRATION_START_DATE:'6/12/22',
+    MIGRATION_END_DATE:'7/12/22',
     MIN_BALANCE_FOR_GAS: nearApiJs.utils.format.parseNearAmount('0.05'),
     MIN_BALANCE_TO_CREATE: nearApiJs.utils.format.parseNearAmount('0.1'),
     MOONPAY_API_KEY: 'pk_test_wQDTsWBsvUm7cPiz9XowdtNeL5xasP9',
