@@ -12,6 +12,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import {
     IMPORT_ACCOUNT_WITH_LINK_V2,
+    SHOW_MIGRATION_BANNER,
 } from '../../../../features';
 import TwoFactorVerifyModal from '../components/accounts/two_factor/TwoFactorVerifyModal';
 import {
@@ -338,7 +339,8 @@ class Routing extends Component {
                 >
                     <ThemeProvider theme={theme}>
                         <ScrollToTop />
-                        <MigrationBanner  account={account}/>
+                        {SHOW_MIGRATION_BANNER && <MigrationBanner  account={account}/>}
+                        
                         <NetworkBanner account={account} />
                         <NavigationWrapper />
                         <GlobalAlert />
