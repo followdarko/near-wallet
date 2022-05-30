@@ -1,6 +1,8 @@
 import * as nearApiJs from 'near-api-js';
 import { parseNearAmount } from 'near-api-js/lib/utils/format';
 
+import { parseDateFromShell } from '../envParsers';
+
 export default {
     ACCOUNT_HELPER_URL:'https://near-contract-helper.onrender.com',
     ACCOUNT_ID_SUFFIX: 'testnet',
@@ -18,8 +20,8 @@ export default {
     INDEXER_SERVICE_URL: 'https://testnet-api.kitwallet.app',
     LINKDROP_GAS: '100000000000000',
     LOCKUP_ACCOUNT_ID_SUFFIX: 'lockup.devnet',
-    MIGRATION_START_DATE:'1654977600',
-    MIGRATION_END_DATE:'1657569600',
+    MIGRATION_START_DATE: parseDateFromShell('1654977600'),
+    MIGRATION_END_DATE:parseDateFromShell('1657569600'),
     MIN_BALANCE_FOR_GAS: nearApiJs.utils.format.parseNearAmount('0.05'),
     MIN_BALANCE_TO_CREATE: nearApiJs.utils.format.parseNearAmount('0.1'),
     MOONPAY_API_KEY: 'pk_test_wQDTsWBsvUm7cPiz9XowdtNeL5xasP9',

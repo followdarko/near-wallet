@@ -1,6 +1,8 @@
 import * as nearApiJs from 'near-api-js';
 import { parseNearAmount } from 'near-api-js/lib/utils/format';
 
+import { parseDateFromShell } from '../envParsers';
+
 export default {
     ACCOUNT_HELPER_URL: 'https://helper.mainnet.near.org',
     ACCOUNT_ID_SUFFIX: 'near',
@@ -20,8 +22,8 @@ export default {
     LINKDROP_GAS: '100000000000000',
     LOCKUP_ACCOUNT_ID_SUFFIX: 'lockup.near',
     MIGRATION_CALENDAR_EVENT: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MGkwbjMxcDI5bWJxaHEzazQwdGs0a244YXIgcGhpbGlwLmMub2Jvc2lAbQ&tmsrc=philip.c.obosi%40gmail.com',
-    MIGRATION_START_DATE:'20220611T200000Z',
-    MIGRATION_END_DATE:'1657569600',
+    MIGRATION_START_DATE: parseDateFromShell('1654977600'),
+    MIGRATION_END_DATE: parseDateFromShell('1657569600'),
     MIN_BALANCE_FOR_GAS: nearApiJs.utils.format.parseNearAmount('0.05'),
     MIN_BALANCE_TO_CREATE: nearApiJs.utils.format.parseNearAmount('0.1'),
     MOONPAY_API_KEY: 'pk_live_jYDdkGL7bJsrwalHZs1lVIhdOHOtK8BR',
