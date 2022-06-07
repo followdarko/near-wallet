@@ -45,7 +45,9 @@ function Modal({
 
     },[]);
 
-    useEffect(() => { setFadeType('out'); }, [isOpen]);
+    useEffect(() => {
+        setFadeType('out'); 
+    }, [isOpen]);
 
     const checkFullScreen = () => {
         const modalHeight = document.getElementById('modal-container').getBoundingClientRect().height;
@@ -56,7 +58,9 @@ function Modal({
     };
 
     const transitionEnd = (e) => {
-        if (e.propertyName !== 'opacity' || fadeType === 'in') return;
+        if (e.propertyName !== 'opacity' || fadeType === 'in') {
+            return;
+        }
 
         if (fadeType === 'out') {
             onClose();
@@ -65,7 +69,9 @@ function Modal({
 
     const onEscKeyDown = (e) => {
         if (!disableClose) {
-            if (e.key !== 'Escape') return;
+            if (e.key !== 'Escape') {
+                return;
+            }
             setFadeType('out');
         }
     };
