@@ -463,11 +463,11 @@ const FungibleTokens = ({
                     <Translate id="button.swap" />
                 </FormButton>
             </div>
-            {zeroBalanceAccount &&
+            {zeroBalanceAccount && (
                 <div className='deposit-banner-wrapper'>
                     <DepositNearBanner />
                 </div>
-            }
+            )}
             {!hideFungibleTokenSection && (
                 <>
                     <div className="sub-title tokens">
