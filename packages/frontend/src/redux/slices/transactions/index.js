@@ -71,8 +71,7 @@ const transactionsSlice = createSlice({
                             transactionsState.pop();
                         }
                     }
-                }
-            );
+                });
         },
         updateTransactionStatus(state, { payload }) {
             const { status, checkStatus, accountId, hash } = payload;

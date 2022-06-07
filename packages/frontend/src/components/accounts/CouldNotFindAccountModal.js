@@ -29,7 +29,7 @@ export function CouldNotFindAccountModal ({
     onClickImport,
     onClose,
     recoveryMethod
- }) {
+}) {
     return (
         <Modal
             id='could-not-find-account-modal'

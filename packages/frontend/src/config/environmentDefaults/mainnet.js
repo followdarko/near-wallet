@@ -6,8 +6,8 @@ export default {
     ACCOUNT_ID_SUFFIX: 'near',
     ACCESS_KEY_FUNDING_AMOUNT: nearApiJs.utils.format.parseNearAmount('0.25'),
     ALLOW_2FA_ENABLE_HASHES: [
-      'E8jZ1giWcVrps8PcV75ATauu6gFRkcwjNtKp7NKmipZG',
-      '11111111111111111111111111111111'
+        'E8jZ1giWcVrps8PcV75ATauu6gFRkcwjNtKp7NKmipZG',
+        '11111111111111111111111111111111'
     ],
     BROWSER_MIXPANEL_TOKEN: 'd5bbbbcc3a77ef8427f2b806b5689bf8',
     DISABLE_CREATE_ACCOUNT: true,
@@ -47,9 +47,9 @@ export default {
     SMS_BLACKLIST: ['CN', 'VN', 'TH'],
     STAKING_GAS_BASE: '25000000000000', // 25 Tgas
     WHITELISTED_CONTRACTS: [
-      'berryclub.ek.near',
-      'wrap.near',
-      '6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near',
+        'berryclub.ek.near',
+        'wrap.near',
+        '6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near',
     ],
     NEAR_TOKEN_ID: 'wrap.near',
     FARMING_CLAIM_GAS: parseNearAmount('0.00000000015'),
