@@ -351,7 +351,7 @@ class Wallet {
                             if (ledgerHdPath) {
                                 setLedgerHdPath({accountId, path: ledgerHdPath});
                             }
-                            return this.getLedgerPublicKey(ledgerHdPath).then((publicKey) => setKeyMeta(publicKey.toString(), {type: "ledger"}));
+                            return this.getLedgerPublicKey(ledgerHdPath).then((publicKey) => setKeyMeta(publicKey.toString(), {type: 'ledger'}));
                         }
                     })
                     .then(() => {
